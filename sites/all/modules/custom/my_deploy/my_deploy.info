@@ -4,3 +4,4 @@ package = My
 core = 7.x
 
 dependencies[] = ctools
+dependencies[] = views

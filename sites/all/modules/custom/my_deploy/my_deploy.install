@@ -1,6 +1,18 @@
 <?php
 
 /**
+ * While installing it need to run all configuration changes.
+ */
+function my_deploy_install() {
+  for ($i = 7001; $i < 8000; $i++) {
+    $candidate = 'my_deploy_update_' . $i;
+    if (function_exists($candidate)) {
+      $candidate();
+    }
+  }
+}
+
+/**
  * Install ctools module.
  */
 function my_deploy_update_7002() {

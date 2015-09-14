@@ -1,1 +1,8 @@
 <?php
+
+/**
+ * Install ctools module.
+ */
+function my_deploy_update_7002() {
+  module_enable(array('ctools'));
+}

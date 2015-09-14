@@ -33,3 +33,10 @@ function my_deploy_update_7003() {
 function my_deploy_update_7005() {
   db_add_field('mytable1', 'newcol', array('type' => 'int', 'not null' => TRUE, 'description' => 'My new integer column.'));
 }
+
+/**
+ * Try task that will fail - 2.
+ */
+function my_deploy_update_7006() {
+  db_add_field('mytable1', 'newcol', array('type' => 'int', 'not null' => TRUE, 'description' => 'My new integer column.'));
+}

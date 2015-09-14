@@ -1,0 +1,4 @@
+name = Project Deploy
+description = Module to manage project automated deployment and testing
+package = My
+core = 7.x
